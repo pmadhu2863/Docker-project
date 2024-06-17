@@ -2,26 +2,27 @@
 version: "3.8"
 services:
   movies:
-    image: anitalluri00/moviesrepo:latest
+    image: madhu0305/paymovies:latest
     ports:
       - 81:80
     deploy:
       replicas: 3
   train:
-    image: anitalluri00/trainrepo:latest
+    image: madhu0305/paytrain:latest
     ports:
       - 82:80
     deploy:
       replicas: 3
   dth:
-    image: anitalluri00/dthrepo:latest
+    image: madhu0305/paydth:latest
     ports:
       - 83:80
     deploy:
       replicas: 3
   recharge:
-    image: anitalluri00/rechargerepo:latest
+    image: madhu0305/payrecharge:latest
     ports:
       - 84:80
     deploy:
       replicas: 3
+
