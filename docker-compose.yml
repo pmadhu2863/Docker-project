@@ -25,4 +25,3 @@ services:
       - 84:80
     deploy:
       replicas: 3
-
